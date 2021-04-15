@@ -18,4 +18,4 @@ tibame專案  AI carcar
 在使用者使用價格預測功能的時候，將輸入的資料傳送到kafka，寫一隻程式將kafka內的資料下載並儲存到MySQL，再由另一隻程式將這些使用者輸入的車款做次數排序後定期的將排行榜傳到redis中。
 
 即時熱搜榜難題及解決方法:
-下載kafka中資料的consumer常常因session.timeout時間到而掛掉，常常需要人員去手動重新開啟。將consumer包裝成Docker Image並設定container自動重啟。
+下載kafka中資料的consumer常常因session.timeout時間到而掛掉，需要人員去手動重新開啟。將consumer包裝成Docker Image並設定container自動重啟。
